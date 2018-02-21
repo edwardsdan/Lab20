@@ -1,0 +1,13 @@
+﻿<br /><br />
+<h3>Please fill in the form to register!</h3>
+<h5>@ViewBag.InputError</h5>
+<br /><br />
+
+<form action="AddUser" method="get">
+    <h4>First Name:</h4><input type="text" name="firstName" />
+    <h4>Last Name:</h4><input type="text" name="lastName" />
+    <h4>Email:</h4><input type="email" name="emailAddress" />
+    <h4>Phone Number:</h4><input type="text" name="phoneNumber" pattern="^\d{10}$"/>
+    <h4>Password:</h4><input type="password" name="password" /><br /><br />
+    <input type="submit" value="Register" />
+</form>
